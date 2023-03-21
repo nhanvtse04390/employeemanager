@@ -77,6 +77,7 @@ export default {
         dept: this.dept,
         position: this.position,
       });
+      this.$router.push({ path: "/" });
     },
   },
 };
