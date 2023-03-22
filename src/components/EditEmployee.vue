@@ -70,7 +70,8 @@ export default {
 
   methods: {
     async updateEmployee() {
-      const frankDocRef = doc(db, "employees", "88.25371201502143");
+      console.log("==S",this.docId)
+      const frankDocRef = doc(db, "employees", this.docId);
       await updateDoc(frankDocRef, {
         employee_id: this.employee_id,
         name: this.name,
